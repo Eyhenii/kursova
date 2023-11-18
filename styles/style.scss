@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+body {
+    background: #edede9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Slab", serif;
+}
+
+body {
+    background: #454545;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    z-index: 10;
+    background: #d5bdaf;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.288);
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #000000;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        left: -10px;
+        width: 30px;
+        height: 30px;
+        opacity: 0;
+        transition: .5s;
+        transform: rotate(-20deg);
+        background-image: url('../img/military-hat.png');
+        background-size: 100%;
+
+        &:hover::before {
+            opacity: 1;
+            top: -5px;
+        }
+    }
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    letter-spacing: 5px;
+
+    &>img {
+        margin-right: 15px;
+    }
+}
+
+.main {
+    margin: 50px 0;
+}
+
+.main__content {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 800px;
+
+    &>img {
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+        -webkit-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+    }
+}
+
+
+.text__content {
+    height: 100%;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #d5bdaf;
+}
+
+.main__title {
+    color: #d5bdaf;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.sub__title {
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.btn {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    padding: 10px 20px;
+    color: #c7c7c7;
+    border: 4px solid #d5bdaf;
+    cursor: pointer;
+    background: transparent;
+    font-weight: 700;
+    font-size: 24px;
+    transition: .3s;
+
+    &:hover {
+        background: #d5bdaf;
+        color: white;
+    }
+}
+
+.main__title__element {
+    color: #d5bdaf;
+    font-weight: 700;
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.about {
+    color: #d6ccc2;
+}
+
+.about__element {
+    margin: 20px 0;
+    letter-spacing: 2px;
+    line-height: 25px;
+
+    &>strong {
+        display: block;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+}
+
+
+.gallery__contnet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &>img {
+        padding: 10px;
+        width: 200px;
+        height: 290px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+}
+
+.news__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.new__item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px solid #d5bdaf;
+    transition: .3s;
+    margin-bottom: 15px;
+
+    &>img {
+        width: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+}
+
+.new__text {
+    width: 200px;
+    text-align: center;
+    color: #c7c7c7;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.btn__new {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 4px solid #d5bdaf;
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    color: #c7c7c7;
+    &:hover {
+        background: #d5bdaf;
+        color: white;
+    }
+}
+
+.map {
+    width: 50%;
+    height: 400px;
+}
+
+.contact__content {
+    display: flex;
+}
+
+.text__contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.link {
+    font-size: 32px;
+    color: #d5bdaf;
+    width: 550px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    background: #d6ccc2;
+}
+
+.link__footer {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.author {
+    font-size: 32px;
+}
+
+
+.mySwiper {
+    height: 800px;
+}
+
+swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+swiper-slide img {
+    display: block;
+
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+
+    .header__content {
+        display: block;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .btn {
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .nav {
+        font-size: 20px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .about__element {
+        text-align: center;
+    }
+
+    .container {
+        max-width: 650px;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sub__title {
+        margin-bottom: 15px;
+    }
+
+    .main__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .btn-main {
+        display: none;
+    }
+
+    .contact__content {
+        display: block;
+    }
+
+    #map {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .gallery__contnet {
+        justify-content: center;
+    }
+
+    .news__content {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main__title {
+        font-size: 32px;
+
+    }
+
+    .text__content {
+        width: 335px;
+        text-align: center;
+    }
+
+    .link {
+        width: auto;
+    }
+}
